@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Series on East Manchester Psychotherapy</title>
-    <link>http://localhost:1313/series/</link>
+    <link>https://kevin-brohan-therapy.github.io/psychotherapy-business-hosted/series/</link>
     <description>Recent content in Series on East Manchester Psychotherapy</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/series/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://kevin-brohan-therapy.github.io/psychotherapy-business-hosted/series/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
