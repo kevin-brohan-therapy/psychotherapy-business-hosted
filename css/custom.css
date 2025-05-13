@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap');
+.intro {
+  font-family: 'Merriweather', serif;
+  font-style: italic;
+}
+
+h1, h3 {
+  font-family: 'Merriweather', serif;
+  font-style: italic;
+}
+
+h2 {
+  font-family: 'Merriweather', serif;
+  font-weight: bold;  /* Optional, to make the text more prominent */
+  text-transform: uppercase;  /* Capitalizes the text */
+  font-style: normal;  /* Ensures the text is not italicized */;
+}
+
+body {
+  background-color: #e8e6dd;
+  color: #322e18; /* Use your logo circle color for contrast */
+}
+
+
+a {
+  color: #322e18;
+}
+
+a:active {
+  color: #322e18;
+}
+
+.has-text-primary {
+  color: #322e18 !important; }
+
+a.has-text-primary:hover, a.has-text-primary:focus {
+  color: #322e18 !important; }
+
+  
+a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-item.is-active, .navbar-link:focus, .navbar-link:focus-within, .navbar-link:hover, .navbar-link.is-active {
+  color: #afa360;
+}
+
+.navbar-burger {
+  color: #322e18; 
+}
+
+.navbar.is-transparent .navbar-dropdown a.navbar-item.is-active {
+  color: #afa360; }
