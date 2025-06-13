@@ -26,14 +26,19 @@ body {
 }
 
 .hero {
-  background-image: url('/psychotherapy-business-hosted/img/hero.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: #fdf6f0;
-  min-height: 60vh;
   position: relative;
-  z-index: 0;
+  background: url('/psychotherapy-business-hosted/img/hero.png') center/cover no-repeat;
+  color: #f5f2ec;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(50, 46, 24, 0.6); /* olive overlay */
+}
+.hero .content {
+  position: relative;
+  padding: 4rem 2rem;
 }
 
 img {
@@ -50,12 +55,26 @@ hr {
   margin: 2rem 0;
 }
 
-a {
-  color: #322e18;
+a, .button {
+  color: #f5f2ec;
+  background-color: #776844;
+  border: 1px solid #322e18;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+a:hover, .button:hover {
+  background-color: #8a6c4e;
 }
 
 a:active {
   color: #322e18;
+}
+
+section.alt-bg {
+  background-color: #f5f2ec;
+  padding: 2rem 0;
 }
 
 .has-text-primary {

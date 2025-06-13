@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Vitality</title>
+    <title>TapRoot</title>
     <link>http://localhost:1313/psychotherapy-business-hosted/</link>
-    <description>Recent content on Vitality</description>
+    <description>Recent content on TapRoot</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="http://localhost:1313/psychotherapy-business-hosted/index.xml" rel="self" type="application/rss+xml" />
