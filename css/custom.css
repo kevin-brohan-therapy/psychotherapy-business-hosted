@@ -143,3 +143,18 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
   white-space: nowrap;
   pointer-events: none;
 }
+
+.back-button {
+  display: inline-block;
+  background-color: #322e18;
+  color: #f5f2ec;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #504c2c;
+}
