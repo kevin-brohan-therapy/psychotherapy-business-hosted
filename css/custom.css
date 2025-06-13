@@ -1,19 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap');
 .intro {
   font-family: 'Merriweather', serif;
-  font-style: italic;
+  font-style: normal;
 }
 
 h1, h3 {
   font-family: 'Merriweather', serif;
-  font-style: italic;
+  font-style: normal;
 }
 
 h2 {
   font-family: 'Merriweather', serif;
   font-weight: bold;  /* Optional, to make the text more prominent */
   text-transform: uppercase;  /* Capitalizes the text */
-  font-style: normal;  /* Ensures the text is not italicized */;
+  font-style: italic;  /* Ensures the text is not italicized */;
 }
 
 body {
@@ -27,14 +27,14 @@ body {
 
 .hero {
   position: relative;
-  background: url('/psychotherapy-business-hosted/img/hero.png') center/cover no-repeat;
-  color: #f5f2ec;
+  /* background: url('/psychotherapy-business-hosted/img/hero.png') center/cover no-repeat; */
+  color: #e8e6dd;
 }
 .hero::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(50, 46, 24, 0.6); /* olive overlay */
+  background: #e8e6dd
 }
 .hero .content {
   position: relative;
@@ -55,22 +55,27 @@ hr {
   margin: 2rem 0;
 }
 
-a, .button {
-  color: #f5f2ec;
-  background-color: #776844;
-  border: 1px solid #322e18;
-  border-radius: 4px;
-  padding: 0.5rem 1rem;
+a,
+.button {
+  background-color: transparent;
+  color: #322e18;
+  font-size: 2.5rem;
+  font-weight: 500;
+  padding: 1rem 1.5rem;
   text-decoration: none;
-  transition: background 0.3s ease;
-}
-a:hover, .button:hover {
-  background-color: #8a6c4e;
+  margin: 15px;
+  display: inline-block;
+  border: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-a:active {
+a:hover,
+.button:hover {
+  background-color: #e8e6dd; /* soft light area on hover */
   color: #322e18;
 }
+
 
 section.alt-bg {
   background-color: #f5f2ec;
