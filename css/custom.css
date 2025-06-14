@@ -27,7 +27,7 @@ body {
 
 .hero {
   position: relative;
-  /* background: url('/psychotherapy-business-hosted/img/hero.png') center/cover no-repeat; */
+  /* background: url('/img/hero.png') center/cover no-repeat; */
 }
 
 .hero::before {
