@@ -252,9 +252,9 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
 }
 
 /* Dark mode styles */
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   body {
-    background-color: #1a1a14; /* much darker background */
-    color: #e8e6dd;            /* light text for contrast */
+    background-color: #1a1a14;
+    color: #e8e6dd;
   }
-}
+} */
