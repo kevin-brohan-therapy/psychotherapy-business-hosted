@@ -28,14 +28,14 @@ body {
 .hero {
   position: relative;
   /* background: url('/psychotherapy-business-hosted/img/hero.png') center/cover no-repeat; */
-  color: #e8e6dd;
 }
+
 .hero::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: #e8e6dd
 }
+
 .hero .content {
   position: relative;
   padding: 4rem 2rem;
@@ -61,12 +61,13 @@ a,
   color: #322e18;
   font-size: 1.5rem;
   font-weight: 500;
-  padding: 1rem 1.5rem;
+  padding: 0.75rem 2rem;
   text-decoration: none;
   margin: 15px;
   display: inline-block;
-  border: none;
-  border-radius: 6px;
+  border: none;  
+  cursor: pointer;
+  border-radius: 8px;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -100,7 +101,7 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
 .navbar.is-transparent .navbar-dropdown a.navbar-item.is-active {
   color: #afa360; }
 
-.contact-buttons {
+.contact-therapist-buttons {
   display: flex;
   justify-content: center;
   gap: 1.5rem;
@@ -108,27 +109,26 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
   flex-wrap: wrap;
 }
 
-.contact-button {
+.contact-therapist-button {
   display: inline-flex;
-  align-items: center;
-  gap: 12px;
-  font-size: 1.1rem;
-  font-weight: 500;
+  background-color: transparent;
   color: #322e18;
-  background-color: #e8e6dd;
-  text-decoration: none;
-  padding: 0.75rem 1.5rem;
-  border-radius: 999px;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  box-shadow: 0 1px 4px rgba(50, 46, 24, 0.1);
+  font-size: 1.1rem;
+  padding: 0.75rem 2rem;
+  border: 2px solid #322e18;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 2rem auto 0;
 }
 
-.contact-button:hover {
-  background-color: #dcd7c7;
-  transform: translateY(-2px);
+/* Hover state */
+.contact-therapist-button:hover {
+  background-color: #504c2c;
+  color: #e8e6dd;
 }
 
-.contact-button svg {
+.contact-therapist-button svg {
   width: 24px;
   height: 24px;
   stroke: #322e18;
@@ -167,17 +167,15 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
   padding: 0.4rem 0.8rem;  /* Reduced padding */
   border-radius: 6px;
   text-decoration: none;
-  font-size: 0.5em !important;
-  transition: background 0.3s ease;
 }
 
 .back-button:hover {
   background-color: #504c2c;
+  color: #e8e6dd;
 }
 
 /* Contact Section */
 #contact {
-  background-color: #e8e6dd;
   padding: 4rem 2rem;
   text-align: center;
 }
@@ -187,6 +185,14 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
   max-width: 600px;
   margin: 0 auto;
   text-align: left;
+}
+
+/* Labels */
+#contact form label {
+  display: block;
+  margin-bottom: 1.5rem;
+  color: #322e18;
+  font-size: 1rem;
 }
 
 /* Inputs and Textarea */
@@ -243,4 +249,12 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
 #contact button:hover {
   background-color: #504c2c;
   color: #e8e6dd;
+}
+
+/* Dark mode styles */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #1a1a14; /* much darker background */
+    color: #e8e6dd;            /* light text for contrast */
+  }
 }
