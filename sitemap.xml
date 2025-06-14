@@ -2,14 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://kevin-brohan-therapy.github.io/psychotherapy-business-hosted/series/</loc>
+    <loc>http://localhost:1313/psychotherapy-business-hosted/series/</loc>
   </url><url>
-    <loc>https://kevin-brohan-therapy.github.io/psychotherapy-business-hosted/special/</loc>
+    <loc>http://localhost:1313/psychotherapy-business-hosted/special/</loc>
   </url><url>
-    <loc>https://kevin-brohan-therapy.github.io/psychotherapy-business-hosted/tags/</loc>
+    <loc>http://localhost:1313/psychotherapy-business-hosted/tags/</loc>
   </url><url>
-    <loc>https://kevin-brohan-therapy.github.io/psychotherapy-business-hosted/</loc>
+    <loc>http://localhost:1313/psychotherapy-business-hosted/</loc>
   </url><url>
-    <loc>https://kevin-brohan-therapy.github.io/psychotherapy-business-hosted/psychotherapy-business-hosted/thank-you/</loc>
+    <loc>http://localhost:1313/psychotherapy-business-hosted/psychotherapy-business-hosted/thank-you/</loc>
   </url>
 </urlset>
