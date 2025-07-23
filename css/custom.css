@@ -138,6 +138,8 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
   position: relative;
   width: 400px; /* or adjust to match actual image size */
   margin: 2rem auto;
+  max-width: 100%;
+  overflow-x: visible;
 }
 
 .flowchart-image {
