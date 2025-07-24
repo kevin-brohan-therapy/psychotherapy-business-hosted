@@ -134,12 +134,43 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
   stroke: #322e18;
 }
 
-.flowchart-container {
+.flowchart-flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
   position: relative;
-  width: 400px; /* or adjust to match actual image size */
-  margin: 2rem auto;
-  max-width: 100%;
-  overflow-x: visible;
+}
+
+.flowchart-step {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+/* Arrow container between steps */
+.flowchart-arrow {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 30px; /* Adds space before the next section */
+}
+
+/* Draw an arrow using CSS */
+.flowchart-arrow::after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-right: 4px solid #555;
+  border-bottom: 4px solid #555;
+  transform: rotate(45deg);
 }
 
 .flowchart-image {
