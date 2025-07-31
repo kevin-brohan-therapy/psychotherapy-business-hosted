@@ -77,6 +77,16 @@ a:hover,
   color: #322e18;
 }
 
+a {
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
+p, .content, .people-section {
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
 .map-container {
   position: relative;
   padding-bottom: 56.25%; /* 16:9 ratio */
