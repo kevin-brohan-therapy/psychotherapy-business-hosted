@@ -77,14 +77,19 @@ a:hover,
   color: #322e18;
 }
 
-a {
+/* Force links and paragraphs to break long URLs */
+a, p, .content, .people-section {
   word-break: break-word;
   overflow-wrap: anywhere;
+  white-space: normal;
+  max-width: 100%;
 }
 
-p, .content, .people-section {
-  word-break: break-word;
+.section, .section .container, .section .text, .people-section {
+  max-width: 100%;
+  box-sizing: border-box;
   overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .map-container {
