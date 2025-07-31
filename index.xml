@@ -1,25 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Threshold Psychotherapy</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content on Threshold Psychotherapy</description>
-    <generator>Hugo</generator>
-    <language>en-uk</language>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Privacy Policy</title>
-      <link>http://localhost:1313/privacy/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/privacy/</guid>
-      <description>Privacy Policy&#xD;Last updated: 25 July 2025&#xA;Threshold Psychotherapy is committed to protecting your privacy and handling your personal information with care and respect. This policy outlines how your data is collected, stored, and used when you visit this website or get in touch.&#xA;1. Who We Are&#xD;Threshold Psychotherapy is a psychotherapy service based in the UK. The data controller is Kevin Brohan.&#xA;If you have any questions about this policy, you can get in touch at:</description>
-    </item>
-    <item>
-      <title>Thank you</title>
-      <link>http://localhost:1313/thank-you/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/thank-you/</guid>
-      <description>Your query has been submitted. Thanks!&#xA;Return to Home.</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Threshold Psychotherapy</title><link>https://thresholdpsychotherapy.co.uk/</link><description>Recent content on Threshold Psychotherapy</description><generator>Hugo</generator><language>en-uk</language><atom:link href="https://thresholdpsychotherapy.co.uk/index.xml" rel="self" type="application/rss+xml"/><item><title>Privacy Policy</title><link>https://thresholdpsychotherapy.co.uk/privacy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://thresholdpsychotherapy.co.uk/privacy/</guid><description>Privacy PolicyLast updated: 25 July 2025
+Threshold Psychotherapy is committed to protecting your privacy and handling your personal information with care and respect. This policy outlines how your data is collected, stored, and used when you visit this website or get in touch.
+1. Who We AreThreshold Psychotherapy is a psychotherapy service based in the UK. The data controller is Kevin Brohan.
+If you have any questions about this policy, you can get in touch at:</description></item><item><title>Thank you</title><link>https://thresholdpsychotherapy.co.uk/thank-you/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://thresholdpsychotherapy.co.uk/thank-you/</guid><description>Your query has been submitted. Thanks!
+Return to Home.</description></item></channel></rss>
