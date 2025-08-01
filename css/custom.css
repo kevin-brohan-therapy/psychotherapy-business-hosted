@@ -239,13 +239,14 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
 /* Labels */
 #contact form label {
   display: block;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   color: #322e18;
   font-size: 1rem;
 }
 
 /* Inputs and Textarea */
 #contact input[type="name"],
+#contact input[type="text"],
 #contact input[type="email"],
 #contact textarea {
   width: 100%;
@@ -255,8 +256,12 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
   border: 1px solid #ccc;
   border-radius: 10px;
   box-sizing: border-box;
-  margin-top: 0.5rem;
   font-family: sans-serif;
+  margin-bottom: 0.5rem;
+}
+
+.form-group {
+  margin-bottom: 1em; /* space between form rows */
 }
 
 #contact textarea.message {
