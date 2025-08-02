@@ -1,33 +1,278 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap');
-.intro {
+h1.site-title, .bold-title {
   font-family: 'Merriweather', serif;
   font-style: normal;
+  font-weight: 400;
+  font-size: 6.4rem;
+  text-align: center;
+  margin-top: 3.5rem;
+  margin-bottom: 1.2rem;
+  letter-spacing: 0.01em;
+  color: #322e18;
 }
 
-h1, h3 {
+@media (max-width: 600px) {
+  h1.site-title, .bold-title {
+    font-size: 2.1rem;
+    margin-top: 1.2rem;
+    margin-bottom: 0.6rem;
+  }
+}
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap');
+.site-subtitle {
   font-family: 'Merriweather', serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  color: #322e18;
+  letter-spacing: 0.01em;
+}
+
+/* Section Headings */
+h2, .section-title {
+  font-family: 'Merriweather', serif;
+  font-weight: bold;
+  text-transform: uppercase;
   font-style: normal;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.04em;
+}
+
+/* Therapist Names */
+/* Therapist Names */
+h3.therapist-name {
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: left;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.01em;
+}
+
+/* Button and Back Button Consistency */
+.button, .back-button, a.back-button {
+  background-color: #afa360;
+  color: #fff !important;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin: 15px 0;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(50,46,24,0.07);
+}
+.button:hover, .back-button:hover, a.back-button:hover {
+  background-color: #322e18;
+  color: #fff !important;
+}
+/* ===== Contact Form Styling ===== */
+form#contact-form {
+  background: #f5f2ec;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 500px;
+  margin: 2rem auto;
+  box-shadow: 0 2px 12px rgba(50,46,24,0.07);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+form#contact-form label {
+  font-weight: 600;
+  color: #322e18;
+  margin-bottom: 0.25rem;
+}
+form#contact-form input[type="text"],
+form#contact-form input[type="email"],
+form#contact-form textarea {
+  padding: 0.75rem 1rem;
+  border: 1px solid #afa360;
+  border-radius: 6px;
+  font-size: 1rem;
+  background: #fff;
+  color: #322e18;
+  transition: border-color 0.2s;
+}
+form#contact-form input[type="text"]:focus,
+form#contact-form input[type="email"]:focus,
+form#contact-form textarea:focus {
+  border-color: #322e18;
+  outline: none;
+}
+form#contact-form button[type="submit"] {
+  background-color: #afa360;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-top: 0.5rem;
+  box-shadow: 0 2px 8px rgba(50,46,24,0.07);
+  text-decoration: none;
+  display: inline-block;
+}
+form#contact-form button[type="submit"]:hover {
+  background-color: #322e18;
+  color: #fff;
+}
+/* Make long links wrap and smaller for therapist profile links */
+.breakable-link {
+  font-size: 1rem;
+  word-break: break-all;
+  overflow-wrap: anywhere;
+  display: inline-block;
+  max-width: 100%;
+}
+/* ===== Responsive Navigation Fixes ===== */
+@media (max-width: 1024px) {
+  .navbar-burger {
+    display: block;
+    cursor: pointer;
+  }
+  .navbar-menu {
+    display: none;
+  }
+  .navbar-burger.is-active + .navbar-menu,
+  .navbar-menu.is-active {
+    display: block;
+    position: absolute;
+    background: #f5f2ec;
+    width: 100%;
+    left: 0;
+    top: 100%;
+    z-index: 1000;
+  }
+}
+@media (min-width: 1025px) {
+  .navbar-burger {
+    display: none;
+  }
+  .navbar-menu {
+    display: flex !important;
+    position: static;
+    background: none;
+    width: auto;
+  }
+}
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap');
+
+/* ===== Typography ===== */
+
+body {
+  font-family: 'Nunito Sans', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  font-style: normal;
+}
+h2, h3 {
+  font-family: 'Nunito Sans', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+}
+.intro {
+  font-family: 'Merriweather', serif;
+  font-style: italic;
 }
 
 h2 {
-  font-family: 'Merriweather', serif;
-  font-weight: bold;  /* Optional, to make the text more prominent */
-  text-transform: uppercase;  /* Capitalizes the text */
-  font-style: italic;  /* Ensures the text is not italicized */;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-style: italic;
 }
 
+/* ===== Colors and Base Styles ===== */
 body {
   background-color: #e8e6dd;
-  color: #322e18; /* Use your logo circle color for contrast */
+  color: #322e18;
+}
+
+a, .button {
+  background-color: transparent;
+  color: #322e18;
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 0.75rem 2rem;
+  text-decoration: none;
+  margin: 15px;
+  display: inline-block;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+a:hover, .button:hover {
+  background-color: #e8e6dd;
+  color: #322e18;
 }
 
 .left-align {
   text-align: left;
 }
 
+/* ===== Navigation Overrides ===== */
+nav ul.navigation {
+  display: flex !important;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  position: static !important;
+  opacity: 1 !important;
+  pointer-events: auto !important;
+  height: auto !important;
+  transform: none !important;
+  transition: none !important;
+  flex-wrap: wrap;
+}
+
+nav ul.navigation li {
+  display: block;
+}
+
+nav .mobile-menu-toggle {
+  display: none !important;
+}
+
+body.navigation-open nav ul.navigation {
+  display: flex !important;
+}
+
+/* Optional hover color tweaks */
+a.navbar-item:hover,
+a.navbar-item:focus,
+a.navbar-item:focus-within,
+a.navbar-item.is-active,
+.navbar-link:hover,
+.navbar-link:focus,
+.navbar-link:focus-within,
+.navbar-link.is-active {
+  color: #afa360;
+}
+
+.navbar-burger {
+  color: #322e18;
+}
+
+.navbar.is-transparent .navbar-dropdown a.navbar-item.is-active {
+  color: #afa360;
+}
+
+/* ===== Hero Section ===== */
 .hero {
   position: relative;
-  /* background: url('/img/hero.png') center/cover no-repeat; */
 }
 
 .hero::before {
@@ -41,274 +286,28 @@ body {
   padding: 4rem 2rem;
 }
 
+/* ===== Images ===== */
 img {
-  margin-top: 0; /* prevent extra space */
+  margin-top: 0;
   vertical-align: top;
   box-shadow: none !important;
   border: none !important;
-  outline: none !important;
 }
 
+/* ===== Horizontal Rule ===== */
 hr {
   border: none;
   border-top: 2px solid #322e18;
   margin: 2rem 0;
 }
 
-a,
-.button {
-  background-color: transparent;
-  color: #322e18;
-  font-size: 1.5rem;
-  font-weight: 500;
-  padding: 0.75rem 2rem;
-  text-decoration: none;
-  margin: 15px;
-  display: inline-block;
-  border: none;  
-  cursor: pointer;
-  border-radius: 8px;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-a:hover,
-.button:hover {
-  background-color: #e8e6dd; /* soft light area on hover */
-  color: #322e18;
-}
-
-.map-container {
-  position: relative;
-  padding-bottom: 56.25%; /* 16:9 ratio */
-  height: 0;
-  overflow: hidden;
-  max-width: 100%;
-}
-
-.map-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
-}
-
+/* ===== Sections ===== */
 section.alt-bg {
   background-color: #f5f2ec;
   padding: 2rem 0;
 }
 
-.has-text-primary {
-  color: #322e18 !important; }
-
-a.has-text-primary:hover, a.has-text-primary:focus {
-  color: #322e18 !important; }
-
-  
-a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-item.is-active, .navbar-link:focus, .navbar-link:focus-within, .navbar-link:hover, .navbar-link.is-active {
-  color: #afa360;
-}
-
-.navbar-burger {
-  color: #322e18; 
-}
-
-.navbar.is-transparent .navbar-dropdown a.navbar-item.is-active {
-  color: #afa360; }
-
-.contact-therapist-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  margin-top: .7rem;
-  flex-wrap: wrap;
-}
-
-.contact-therapist-button {
-  display: inline-flex;
-  background-color: transparent;
-  color: #322e18;
-  font-size: 1.1rem;
-  padding: 0.75rem 2rem;
-  border: 2px solid #322e18;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  margin: 2rem auto 0;
-}
-
-/* Hover state */
-.contact-therapist-button:hover {
-  background-color: #504c2c;
-  color: #e8e6dd;
-}
-
-.contact-therapist-button svg {
-  width: 24px;
-  height: 24px;
-  stroke: #322e18;
-}
-
+/* ===== Flowchart ===== */
 .flowchart-flex-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 40px;
-  position: relative;
 }
-
-.flowchart-step {
-  position: relative;
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  flex-wrap: wrap;
-  width: 100%;
-}
-
-/* Arrow container between steps */
-.flowchart-arrow {
-  width: 40px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  margin-bottom: 30px; /* Adds space before the next section */
-}
-
-/* Draw an arrow using CSS */
-.flowchart-arrow::after {
-  content: "";
-  display: block;
-  width: 20px;
-  height: 20px;
-  border-right: 4px solid #555;
-  border-bottom: 4px solid #555;
-  transform: rotate(45deg);
-}
-
-.flowchart-image {
-  width: 100px;
-  height: auto;
-  display: block;
-  box-shadow: none;
-}
-
-.stage-title {
-  position: absolute;
-  left: 68%; /* Adjust closer to edge of circle */
-  transform: translateY(-50%);
-  font-size: 1.2rem;
-  color: #343623;
-  font-weight: 600;
-  padding: 2px 6px;
-  border-radius: 4px;
-  white-space: nowrap;
-  pointer-events: none;
-}
-
-.back-button {
-  display: inline-block;
-  background-color: #322e18;
-  color: #e8e6dd;
-  padding: 0.4rem 0.8rem;  /* Reduced padding */
-  border-radius: 6px;
-  text-decoration: none;
-}
-
-.back-button:hover {
-  background-color: #504c2c;
-  color: #e8e6dd;
-}
-
-/* Contact Section */
-#contact {
-  padding: 4rem 2rem;
-  text-align: center;
-}
-
-/* Container */
-#contact .container {
-  max-width: 600px;
-  margin: 0 auto;
-  text-align: left;
-}
-
-/* Labels */
-#contact form label {
-  display: block;
-  margin-bottom: 1rem;
-  color: #322e18;
-  font-size: 1rem;
-}
-
-/* Inputs and Textarea */
-#contact input[type="name"],
-#contact input[type="text"],
-#contact input[type="email"],
-#contact textarea {
-  width: 100%;
-  padding: 0.75rem;
-  font-size: 1rem;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  box-sizing: border-box;
-  font-family: sans-serif;
-  margin-bottom: 0.5rem;
-}
-
-.form-group {
-  margin-bottom: 1em; /* space between form rows */
-}
-
-#contact textarea.message {
-  width: 100%;
-  padding: 0.75rem;
-  font-size: 1rem;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  box-sizing: border-box;
-  margin-top: 0.5rem;
-  font-family: sans-serif;
-  height: 9rem; /* roughly 3x the default input height */
-}
-
-/* Focus styling */
-#contact input:focus,
-#contact textarea:focus {
-  outline: none;
-  border-color: #322e18;
-  box-shadow: 0 0 4px rgba(50, 46, 24, 0.2);
-}
-
-/* Button */
-#contact button {
-  background-color: transparent;
-  color: #322e18;
-  font-size: 1.1rem;
-  padding: 0.75rem 2rem;
-  border: 2px solid #322e18;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  display: block;
-  margin: 2rem auto 0;
-}
-
-/* Hover state */
-#contact button:hover {
-  background-color: #504c2c;
-  color: #e8e6dd;
-}
-
-/* Dark mode styles */
-/* @media (prefers-color-scheme: dark) {
-  body {
-    background-color: #1a1a14;
-    color: #e8e6dd;
-  }
-} */
