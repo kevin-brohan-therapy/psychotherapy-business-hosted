@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap');
+
 h1.site-title, .bold-title {
   font-family: 'Merriweather', serif;
   font-style: normal;
@@ -17,7 +19,7 @@ h1.site-title, .bold-title {
     margin-bottom: 0.6rem;
   }
 }
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap');
+
 .site-subtitle {
   font-family: 'Merriweather', serif;
   font-style: italic;
