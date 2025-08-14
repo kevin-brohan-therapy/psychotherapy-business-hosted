@@ -11,6 +11,7 @@
   transition: color 0.2s;
   display: inline;
 }
+
 .maria-link:hover, .maria-link:focus {
   color: #e67c1f !important;
   background: none !important;
@@ -205,6 +206,12 @@ a[href="#top"]:focus .fa-arrow-up:before {
 
 .navbar{
   background-color: transparent !important;
+}
+
+/* Remove white background and shadow from mobile burger bar */
+.navbar-menu {
+  background: transparent !important;
+  box-shadow: none !important;
 }
 
 .navbar-item, .navbar-link{
