@@ -473,3 +473,40 @@ h1.bold-title, h1.title {
 .profiles-container .profile:last-child {
   margin-bottom: 0;
 }
+
+/* Contact sending modal styles */
+#sending-modal {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background: rgba(32, 63, 92, 0.7);
+  z-index: 10000;
+  align-items: center;
+  justify-content: center;
+}
+#sending-modal .modal-content {
+  background: #F5EAD6;
+  border-radius: 16px;
+  padding: 2.5rem 2.5rem 2rem 2.5rem;
+  box-shadow: 0 8px 32px rgba(32,63,92,0.18);
+  text-align: center;
+  max-width: 350px;
+  margin: auto;
+  font-family: 'Nunito Sans', 'Work Sans', sans-serif;
+}
+#sending-modal h3 {
+  color: #203F5C;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+#sending-modal p {
+  color: #322e18;
+  font-size: 1.1rem;
+  font-family: 'Nunito Sans', sans-serif;
+}
+#sending-modal .spinner {
+  margin: 0 auto 1.5rem auto;
+}
