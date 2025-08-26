@@ -375,6 +375,7 @@ section.alt-bg {
 /* Inputs and Textarea */
 #contact input[type="text"],
 #contact input[type="email"],
+#contact input[type="phone"],
 #contact textarea {
   width: 100%;
   padding: 0.75rem;
