@@ -13176,7 +13176,14 @@ details[open] summary {
 
 .navbar-item {
   text-transform: uppercase;
-  font-size: 0.875rem;
+  font-size: 22.4px;
+  font-weight: 700;
+  height: 49.5938px;
+  line-height: 33.6px;
+  margin: 15px;
+  padding-bottom: 8px;
+  padding-left: 12px;
+  padding-right: 12px;
   color: #4a4a4a; }
   .navbar-item:hover, .navbar-item:active {
     background-color: #ffffff !important; }
