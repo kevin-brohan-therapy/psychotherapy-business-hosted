@@ -14,28 +14,6 @@
   padding-top: 0 !important;
   padding-bottom: 0 !important;
 }
-.maria-link {
-  text-decoration: underline;
-  color: #e67c1f !important;
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-  background: none !important;
-  border-radius: 0 !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  transition: color 0.2s;
-  display: inline;
-}
-
-.maria-link:hover, .maria-link:focus {
-  color: #e67c1f !important;
-  background: none !important;
-  border-radius: 0 !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  text-decoration: underline;
-}
 .process-step {
   display: flex;
   align-items: flex-start;
