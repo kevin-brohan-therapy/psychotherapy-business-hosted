@@ -129,9 +129,11 @@ img {
 }
 
 hr {
-  border: none;
-  border-top: 2px solid rgba(32, 63, 92, 0.2);
-  margin: 2rem 0;
+  border: none !important;
+  border-top: 2px solid rgba(32, 63, 92, 0.2) !important;
+  margin: 2rem 0 !important;
+  background-color: transparent !important;
+  height: auto !important;
 }
 
 a,
