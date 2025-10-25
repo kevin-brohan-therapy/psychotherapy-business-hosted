@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+/* Fonts are now preloaded in head for better performance */
 
 /* Fine-tune logo and hero section for pixel-perfect match */
 .new-logo {
