@@ -1,0 +1,36 @@
+# Cache configuration for GitHub Pages
+# Place this in your static directory - GitHub Pages will respect these headers
+
+# Cache static assets for 1 year with fingerprinting
+/css/*.css
+  Cache-Control: public, max-age=31536000, immutable
+
+/js/*.js
+  Cache-Control: public, max-age=31536000, immutable
+
+/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Cache images for 1 month
+/img/*
+  Cache-Control: public, max-age=2592000
+
+# Cache HTML for 1 hour (allow for content updates)
+/*.html
+  Cache-Control: public, max-age=3600
+
+# Cache index pages for 30 minutes (more frequent updates)
+/
+  Cache-Control: public, max-age=1800
+
+/a/
+  Cache-Control: public, max-age=1800
+
+/b/
+  Cache-Control: public, max-age=1800
+
+/online/
+  Cache-Control: public, max-age=1800
+
+/local/
+  Cache-Control: public, max-age=1800
