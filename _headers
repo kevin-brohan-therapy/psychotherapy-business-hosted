@@ -9,38 +9,38 @@
 /fonts/*
   Cache-Control: public, max-age=31536000, immutable
 
-# Cache images for 1 month
+# Cache images for 1 year with immutable flag (they rarely change)
 /img/*
-  Cache-Control: public, max-age=2592000
+  Cache-Control: public, max-age=31536000, immutable
 
-# Cache HTML pages for 1 hour
+# Cache HTML pages for 1 hour with stale-while-revalidate
 /*.html
-  Cache-Control: public, max-age=3600
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
 
-# Cache home and variant index pages for 30 minutes (for A/B testing updates)
+# Cache home and variant index pages for 30 minutes with stale-while-revalidate (for A/B testing updates)
 /index.html
-  Cache-Control: public, max-age=1800
+  Cache-Control: public, max-age=1800, stale-while-revalidate=3600
 
 /a/index.html
-  Cache-Control: public, max-age=1800
+  Cache-Control: public, max-age=1800, stale-while-revalidate=3600
 
 /b/index.html
-  Cache-Control: public, max-age=1800
+  Cache-Control: public, max-age=1800, stale-while-revalidate=3600
 
 /online/index.html
-  Cache-Control: public, max-age=1800
+  Cache-Control: public, max-age=1800, stale-while-revalidate=3600
 
 /online/a/index.html
-  Cache-Control: public, max-age=1800
+  Cache-Control: public, max-age=1800, stale-while-revalidate=3600
 
 /online/b/index.html
-  Cache-Control: public, max-age=1800
+  Cache-Control: public, max-age=1800, stale-while-revalidate=3600
 
 /local/index.html
-  Cache-Control: public, max-age=1800
+  Cache-Control: public, max-age=1800, stale-while-revalidate=3600
 
 /local/a/index.html
-  Cache-Control: public, max-age=1800
+  Cache-Control: public, max-age=1800, stale-while-revalidate=3600
 
 /local/b/index.html
-  Cache-Control: public, max-age=1800
+  Cache-Control: public, max-age=1800, stale-while-revalidate=3600
