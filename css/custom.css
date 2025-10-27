@@ -1,0 +1,543 @@
+/* Fonts are now preloaded in head for better performance */
+
+/* Fine-tune logo and hero section for pixel-perfect match */
+.new-logo {
+  display: block;
+  margin: 8px auto 320px auto;
+  border: 0;
+  width: 500px;
+  max-width: 90vw;
+  height: auto;
+  background: transparent;
+}
+
+#top.section {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+.process-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding-bottom: 2.5rem;
+}
+
+@media (max-width: 700px) {
+  .process-step {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .process-step img {
+    margin-bottom: 0.5rem;
+  }
+}
+
+html {
+    background-color: #fff;
+    font-size: 16px;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    min-width: 300px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    text-rendering: optimizeLegibility;
+.navbar-item, .navbar-link {
+  border-radius: 4px;
+  font-size: 22.4px !important;
+  font-weight: 700 !important;
+  height: 49.5938px;
+  line-height: 33.6px;
+  margin: 15px;
+  padding: 0 12px 8px 12px;
+  color: #203F5C !important;
+  text-transform: none !important;
+  background: none !important;
+  box-shadow: none !important;
+  transition: background 0.2s, color 0.2s;
+}
+  font-style: normal;
+  line-height: normal;
+}
+
+h1 {
+  color: #203F5C !important;
+}
+
+h2 {
+  font-weight: 700 !important;
+  color: #203F5C !important;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 900 !important;
+  margin-bottom: 20px;
+  color: #203F5C !important;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #F3706A;
+  text-align: left;
+}
+
+h5 {
+  font-weight: 700;  /* Optional, to make the text more prominent */
+  margin-bottom: 20px;
+}
+
+body {
+  background-color: #F5EAD6;
+  color: #203F5C; /* Use your logo circle color for contrast */
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.left-align {
+  text-align: left;
+}
+
+.hero {
+  position: relative;
+  /* background: url('/img/hero.png') center/cover no-repeat; */
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+.hero .content {
+  position: relative;
+  padding: 0;
+}
+
+img {
+  margin-top: 0; /* prevent extra space */
+  vertical-align: top;
+  box-shadow: none !important;
+  outline: none !important;
+  border: none;
+  height: auto;
+  max-width: 100%;
+}
+
+hr {
+  border: none !important;
+  border-top: 2px solid rgba(32, 63, 92, 0.2) !important;
+  margin: 2rem 0 !important;
+  background-color: transparent !important;
+  height: auto !important;
+}
+
+a,
+.button {
+  background-color: transparent;
+  color: #203F5C;
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 0.75rem 2rem;
+  text-decoration: none;
+  margin: 15px;
+  display: inline-block;
+  border: none;  
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a:hover,
+.button:hover {
+  background-color: #F3706A; /* soft light area on hover */
+  color: #fff;
+}
+
+a[href="#top"] {
+  background: none !important;
+  box-shadow: none !important;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+}
+a[href="#top"]:hover, a[href="#top"]:focus {
+  background: none !important;
+  box-shadow: none !important;
+}
+a[href="#top"] .fa-arrow-up:before {
+  color: #F3706A;
+  transition: color 0.3s;
+}
+a[href="#top"]:hover .fa-arrow-up:before,
+a[href="#top"]:focus .fa-arrow-up:before {
+  color: #203F5C;
+}
+
+.container {
+    flex-grow: 1;
+    margin: 0 auto;
+    position: relative;
+    width: auto
+}
+
+.container.is-fluid {
+    max-width: none;
+    padding-left: 32px;
+    padding-right: 32px;
+    width: 100%
+}
+
+.hero{
+  align-items: none !important;;
+}
+
+.hero-body{
+  align-items: none !important;
+  display: block !important;
+}
+
+
+.navbar {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+  margin-bottom: 0;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+/* Remove white background and shadow from mobile burger bar */
+.navbar-menu {
+  background: transparent !important;
+  box-shadow: none !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  padding: 0;
+}
+
+.navbar-item, .navbar-link {
+  border-radius: 4px;
+  font-size: 1.4rem !important;
+  font-weight: 700 !important;
+  color: #203F5C !important;
+  text-transform: none !important;
+  padding: 0.5rem 1.2rem;
+  margin: 0 0.2rem;
+  background: none !important;
+  box-shadow: none !important;
+  transition: background 0.2s, color 0.2s;
+}
+
+.navbar-item:hover, .navbar-link:hover {
+  color: #fff !important;
+  background: #F3706A !important;
+}
+
+
+.map-container {
+  position: relative;
+  padding-bottom: 39.375%; /* 30% smaller than 16:9 ratio */
+  height: 0;
+  overflow: hidden;
+  max-width: 70%;
+}
+
+.map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+section.alt-bg {
+  background-color: #F5EAD6;
+  padding: 2rem 0;
+}
+
+.contact-therapist-buttons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0.7rem;
+  margin-top: .7rem;
+  flex-wrap: wrap;
+}
+
+.contact-therapist-button {
+  background-color: #F3706A;
+  display: inline-flex;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 700;;
+  padding: 0.75rem 2rem;
+  border: 2px solid #F3706A;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 2rem;
+}
+
+/* Hover state */
+.contact-therapist-button:hover {
+  background-color: #203F5C;
+  border: 0;
+  color: #fff;
+  border: 2px solid #203F5C;
+}
+
+.contact-therapist-button svg {
+  width: 24px;
+  height: 24px;
+  stroke: #fff;
+}
+.contact-therapist-button:hover svg {
+  stroke: #fff;
+}
+
+.flowchart-flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  position: relative;
+}
+
+.flowchart-step {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+/* Arrow container between steps */
+
+.flowchart-arrow-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.flowchart-arrow-icon .fa-arrow-down {
+  font-size: 2rem;
+  color: #F3706A;
+  background: none;
+  box-shadow: none;
+  border-radius: 0;
+  transition: none;
+}
+.flowchart-arrow-icon .fa-arrow-down:hover,
+.flowchart-arrow-icon .fa-arrow-down:focus {
+  color: #F3706A;
+  background: none;
+  box-shadow: none;
+}
+
+.flowchart-image {
+  width: 100px;
+  height: auto;
+  display: block;
+  box-shadow: none;
+}
+
+.back-button {
+  display: inline-block;
+  background-color: #322e18;
+  color: #F5EAD6;
+  padding: 0.4rem 0.8rem;  /* Reduced padding */
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.back-button:hover {
+  background-color: #504c2c;
+  color: #F5EAD6;
+}
+
+#top.section {
+  padding-top: 0 !important;
+}
+/* Contact Section */
+#contact {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+/* Container */
+#contact .container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+/* Labels */
+#contact form label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-size: 1rem;
+}
+
+/* Inputs and Textarea */
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="phone"],
+#contact textarea {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin-bottom: 1.5rem;
+  margin-top: 0;
+  font-family: sans-serif;
+}
+
+#contact textarea.message {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin-top: 0.5rem;
+  font-family: sans-serif;
+  height: 9rem; /* roughly 3x the default input height */
+}
+
+/* Focus styling */
+#contact input:focus,
+#contact textarea:focus {
+  outline: none;
+  border-color: #322e18;
+  box-shadow: 0 0 4px rgba(50, 46, 24, 0.2);
+}
+
+/* Button */
+#contact button {
+  background-color: #F3706A;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 0.75rem 2rem;
+  border: 2px solid #F3706A;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: block;
+  margin: 2rem auto 0;
+}
+
+/* Hover state */
+#contact button:hover {
+  border: 2px solid #203F5C;
+  background-color: #203F5C;
+  color: #fff;
+}
+
+.new-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 8px;
+  margin-bottom: 0;
+  border: 0;
+  width: 500px;
+  max-width: 90vw;
+  height: auto;
+  background: transparent;
+}
+
+
+/* Dark mode styles */
+/* @media (prefers-color-scheme: dark) {
+  body {
+    background-color: #1a1a14;
+    color: #F5EAD6;
+  }
+} */
+
+.spinner {
+  margin-top: 1em;
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #203F5C; /* your dark olive green */
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  animation: spin 1s linear infinite;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+h1.bold-title, h1.title {
+  margin-bottom: 1.2rem !important;
+}
+
+.profiles-container .profile {
+  margin-bottom: 4rem;
+}
+
+.profiles-container .profile:last-child {
+  margin-bottom: 0;
+}
+
+/* Contact sending modal styles */
+#sending-modal {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background: rgba(32, 63, 92, 0.7);
+  z-index: 10000;
+  align-items: center;
+  justify-content: center;
+}
+#sending-modal .modal-content {
+  background: #F5EAD6;
+  border-radius: 16px;
+  padding: 2.5rem 2.5rem 2rem 2.5rem;
+  box-shadow: 0 8px 32px rgba(32,63,92,0.18);
+  text-align: center;
+  max-width: 350px;
+  margin: auto;
+  font-family: 'Nunito Sans', 'Work Sans', sans-serif;
+}
+#sending-modal h3 {
+  color: #203F5C;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+#sending-modal p {
+  color: #322e18;
+  font-size: 1.1rem;
+  font-family: 'Nunito Sans', sans-serif;
+}
+#sending-modal .spinner {
+  margin: 0 auto 1.5rem auto;
+}
+.navbar-container {
+  margin-top: 0;
+}
+.logo-navbar-gap {
+  height: 300px;
+  width: 100%;
+  display: block;
+}
