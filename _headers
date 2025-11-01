@@ -36,11 +36,3 @@
 /online/b/index.html
   Cache-Control: public, max-age=1800, stale-while-revalidate=3600
 
-/local/index.html
-  Cache-Control: public, max-age=1800, stale-while-revalidate=3600
-
-/local/a/index.html
-  Cache-Control: public, max-age=1800, stale-while-revalidate=3600
-
-/local/b/index.html
-  Cache-Control: public, max-age=1800, stale-while-revalidate=3600
