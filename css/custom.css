@@ -35,14 +35,17 @@
 }
 
 html {
-    background-color: #fff;
-    font-size: 16px;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    min-width: 300px;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    text-rendering: optimizeLegibility;
+  background-color: #F5EAD6;
+  font-size: 16px;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  min-width: 300px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  text-rendering: optimizeLegibility;
+  font-style: normal;
+  line-height: normal;
+}
 .navbar-item, .navbar-link {
   border-radius: 4px;
   font-size: 22.4px !important;
@@ -56,9 +59,6 @@ html {
   background: none !important;
   box-shadow: none !important;
   transition: background 0.2s, color 0.2s;
-}
-  font-style: normal;
-  line-height: normal;
 }
 
 h1 {
