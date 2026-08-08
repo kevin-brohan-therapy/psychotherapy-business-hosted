@@ -74,14 +74,14 @@ h3 {
   font-size: 2rem;
   font-weight: 900 !important;
   margin-bottom: 20px;
-  color: #203F5C !important;
+  color: #F3706A;
 }
 
 h4 {
   font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 20px;
-  color: #F3706A;
+  color: #203F5C !important;
   text-align: left;
 }
 
