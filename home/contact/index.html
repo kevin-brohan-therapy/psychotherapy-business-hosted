@@ -83,10 +83,10 @@
 
 
         
-        <meta property="og:title" content="" />
+        <meta property="og:title" content="Contact - " />
 <meta property="og:type" content="website" />
 <meta property="og:description" content=""/>
-<meta property="og:url" content="http://localhost:1313/home/"/>
+<meta property="og:url" content="http://localhost:1313/home/contact/"/>
 <meta property="og:site_name" content=""/>
 
 
@@ -176,9 +176,142 @@
                     
                     
     <div class="container markdown top-pad">
-        <img src="../img/blue-palette-logo.png" alt="Logo depicting three circles under an archway" class="new-logo" width="500" height="300" fetchpriority="high" loading="eager" decoding="async" />
-<div style="height:30px;width:100%"></div>
+        <p style="text-align: center;">To arrange an Introductory Call, please fill in the form below.</p>
+<!-- 
+<p>Please state in your message if you have a preferred therapist. We will get in touch shortly via email.</p>
+<p style="text-align: center;"><em>For trainees looking to join Threshold: please note we are not accepting new associates.</em></p>
+ -->
+<section id="contact">
+  <div class="container">
+    <form
+      id="contact-form"
+      method="POST"
+      action="https://query-submission-api.vercel.app/api/contact">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone number:</label>
+        <input type="phone" id="phone" name="phone" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+      <!-- Honeypot field (should remain empty) -->
+      <input type="text" name="website" style="display:none">
+      <!-- Conversion quality info -->
+      <input type="hidden" id="gclid_field" name="gclid" value="">
+      <script>
+        // Make this callable from other scripts (e.g., your submit handler)
+        window.setGclid = function () {
+          const params = new URLSearchParams(window.location.search);
+          const gclid = params.get('gclid'); // hash (#...) does not affect this
+          if (!gclid) {
+            console.log('No gclid in URL:', window.location.href);
+            return;
+          }
+          const field = document.getElementById('gclid_field');
+          if (field) {
+            field.value = gclid;
+            console.log('Set gclid_field to:', gclid);
+          } else {
+            console.log('gclid_field not found in DOM');
+          }
+        };
+        // Try immediately (covers most cases)
+        window.setGclid();
+        // And again once DOM is ready (covers edge cases)
+        document.addEventListener('DOMContentLoaded', window.setGclid);
+      </script>
+      <!-- Secret token -->
+      <input type="hidden" name="secret_token" value="f1b9a653-9b3e-4ae4-beb6-7a3a0b370cbc">
+      <!-- Origin tracking -->
+      <input type="hidden" name="origin" value="default">
+      <!-- CAPTCHA widget -->
+      <div class="g-recaptcha" data-sitekey="6LcYA5krAAAAAO_CvK7iaeRvRRAtVw02ptdr4Ati"></div>
+      <button type="submit"
+        onclick="gtag('event', 'send_click', {
+          event_category: 'engagement',
+          event_label: 'Submit from Button',
+          value: 1
+        });">Send</button>
+    </form>
+  </div>
+</section>
+<!-- Modal for sending spinner and eco message -->
+<div id="sending-modal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(32,63,92,0.7); z-index:10000; align-items:center; justify-content:center;">
+  <div class="modal-content" style="background:#fff; border-radius:12px; padding:2rem 2.5rem; box-shadow:0 8px 32px rgba(32,63,92,0.2); text-align:center; max-width:350px; margin:auto;">
+    <div class="spinner" style="margin:0 auto 1.5rem auto;"></div>
+    <h3 style="color:#203F5C; margin-bottom:1rem;">Sending your message...</h3>
+    <p style="color:#555; font-size:1.1rem;">Thank you for your patience...<br>My email server powers up only when needed, helping reduce energy use and protect the planet 🌍<br>This might take a few seconds to send.</p>
+  </div>
+</div>
+<script>
+  // Load reCAPTCHA asynchronously when user interacts with form
+  function loadRecaptcha() {
+    if (!window.recaptchaLoaded) {
+      const script = document.createElement('script');
+      script.src = 'https://www.google.com/recaptcha/api.js';
+      script.async = true;
+      script.defer = true;
+      document.head.appendChild(script);
+      window.recaptchaLoaded = true;
+    }
+  }
 
+  // Load on first form interaction
+  document.addEventListener('DOMContentLoaded', function() {
+    const contactForm = document.getElementById('contact-form');
+    if (contactForm) {
+      const inputs = contactForm.querySelectorAll('input, textarea');
+      inputs.forEach(input => {
+        input.addEventListener('focus', loadRecaptcha, { once: true });
+      });
+    }
+  });
+</script>
+<script>
+  const form = document.getElementById('contact-form');
+  const button = form.querySelector('button[type="submit"]');
+  const modal = document.getElementById('sending-modal');
+
+  form.addEventListener('submit', async function (e) {
+    e.preventDefault();
+
+    // Force-populate gclid immediately before reading the form
+    window.setGclid?.();
+
+    button.disabled = true;
+    button.textContent = 'Sending...';
+    modal.style.display = 'flex';
+
+    const formData = new FormData(form);
+    const json = Object.fromEntries(formData.entries());
+
+    const response = await fetch(form.action, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(json)
+    });
+
+    if (response.ok) {
+      window.location.href = '/thank-you/';
+    } else {
+      modal.style.display = 'none';
+      button.disabled = false;
+      button.textContent = 'Send';
+      alert('Something went wrong. Please try again later.');
+    }
+  });
+</script>
     </div>
     
     
