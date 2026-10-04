@@ -156,6 +156,27 @@ a:hover,
   color: #fff;
 }
 
+a.couples-text-link {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  font-weight: 500;
+  border-radius: 0;
+  background: none;
+  color: #203F5C;
+  text-decoration: underline;
+  text-decoration-color: rgba(32, 63, 92, 0.4);
+  text-underline-offset: 0.2em;
+}
+
+a.couples-text-link:hover,
+a.couples-text-link:focus-visible {
+  background: none;
+  color: #203F5C;
+  text-decoration-color: currentColor;
+}
+
 a[href="#top"] {
   background: none !important;
   box-shadow: none !important;
@@ -237,6 +258,46 @@ a[href="#top"]:focus .fa-arrow-up:before {
   background: #F3706A !important;
 }
 
+
+.couples-location-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+  gap: 24px;
+  align-items: start;
+  justify-items: center;
+  margin: 3rem auto 0;
+  max-width: 1100px;
+}
+
+.couples-location-photo {
+  min-width: 0;
+  width: 100%;
+  max-width: 640px;
+  text-align: center;
+}
+
+.markdown .couples-location-photo img {
+  margin-top: 0;
+}
+
+.couples-location-map {
+  position: relative;
+  min-width: 0;
+  /* Match the height of the 4:3 photo while keeping the map square. */
+  width: 75%;
+  max-width: 480px;
+  aspect-ratio: 1 / 1;
+}
+
+.couples-location-map iframe {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 8px;
+}
 
 .map-container {
   position: relative;
@@ -389,7 +450,7 @@ section.alt-bg {
 /* Inputs and Textarea */
 #contact input[type="text"],
 #contact input[type="email"],
-#contact input[type="phone"],
+#contact input[type="tel"],
 #contact textarea {
   width: 100%;
   padding: 0.75rem;
